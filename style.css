@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Poppins;
+    src: url("./assets/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("./assets/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Norse;
+    src: url("./assets/Norse-Bold.otf");
+}
+
+body{
+    font-family: Poppins,sans-serif;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.block input{
+    padding: 3px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.block input:focus{
+    outline:1px solid #144dc0;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.block input:user-invalid{
+    border: 1px solid #e32c1b;
+}
+
+/* .block input:user-valid{
+    border: 1px solid #2fe31b;
+
+} */
+
+
+.alert{
+    margin: 0;
+    color: #e32c1b;
+    font-size: 0.7em;
+}
