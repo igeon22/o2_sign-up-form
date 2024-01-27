@@ -1,6 +1,6 @@
 @font-face {
     font-family: Poppins;
-    src: url("./assets/Poppins-Bold.ttf");
+    src: url("./assets/Poppins-Regular.ttf");
 }
 
 @font-face {
@@ -26,6 +26,7 @@ body{
 .block input{
     padding: 3px;
     border: 1px solid #E5E7EB;
+    width: clamp(150px,200px,250px);
     border-radius: 3px;
     font-family: lato;
     font-weight: bold;
@@ -40,14 +41,116 @@ body{
     border: 1px solid #e32c1b;
 }
 
-/* .block input:user-valid{
-    border: 1px solid #2fe31b;
+span{
+    font-style: italic;
+}
 
-} */
+.others{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+  
+}
 
+.presentation{
+    background-color: #f4f6f8;
+    width: 100%;
+    padding: 60px 0 20px 0;
+}
+
+.presentation p{
+    padding-left: 25px;
+    font-weight: bold;
+}
 
 .alert{
     margin: 0;
     color: #e32c1b;
     font-size: 0.7em;
+}
+
+body{
+    display: flex;
+    margin: 0;
+}
+
+.image-container{
+    width: 40%;
+    background-image: url("./assets/image.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.image-container .text{
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.308);
+    justify-content: center;
+    align-items: center;
+    max-height: 120px;
+}
+
+.text img{
+    width: 80px;
+   
+}
+
+.text p{
+    font-family: Norse;
+    color: white;
+    font-size: 80px;
+    margin: 0;
+}
+
+.form-container{
+    padding: 25px;
+}
+
+h2{
+    margin-top: 0;
+}
+
+form{
+    max-width: 500px;
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+fieldset{
+    border: none;
+    
+}
+
+button[type="submit"]{
+    background-color: #4d721b;
+    color: white;
+    font-family: Poppins;
+    border: none;
+    font-size: 1rem;
+    padding:10px  20px ;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.login{
+    margin-top:20px;
+}
+
+.login h3{
+    display: inline;
+}
+
+.login a{
+    color: #4d721b;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
 }

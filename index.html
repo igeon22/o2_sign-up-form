@@ -7,46 +7,81 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="image-container">
+        <div class="text">
+            <img src="./assets/odin-lined.png" alt="">
+            <p>ODIN</p>
+        </div>
+    </div>
+
+    <div class="others">
+
+        <div class="presentation">
+            <p>This is not a real online service! You know you need  something like this <br>in your life to help you realize your deepest dream. <br> Sign up <span>now&nbsp;</span> to get started. </p>
+
+
+            <p>You <span>know&nbsp;</span> you want to.</p>
+        </div>
+
+   
+        <div class="form-container">
+
+            <h2>Let's do this!</h2>
+            <form action="" method="">
+
+
+                    
+                <div class="block">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" minlength="3" maxlength="40" required>
+                </div>
+
+                <div class="block">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" minlength="3" maxlength="40" required>
+                </div>
+
+
+                <div class="block">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="block">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" pattern="[0-9]{8,}" required name="number" id="number">
+                </div>
+
+                <div class="block">
+                    <label for="password">Password</label>
+                    <div class="block">
+                        <input type="password" name="password" id="password" required>
+                        <p class="alert" hidden>Password does not match*</p>
+
+                    </div>
+                </div>
+
+                <div class="block">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" title="Password does not match" name="confirmpassword" id="confirmpassword" required>
+                    
+                </div>
+                
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <div class="login">
+                <h3>Already have an account?</h3>
+                <a href="#">Log in</a>
     
-    <h1>hello from the hel</h1>
-    <form action="" method="">
-        <div class="block">
-            <label for="firstname">FirstName</label>
-            <input type="text" name="firstname" id="firstname" minlength="3" maxlength="40" required>
-        </div>
-
-        <div class="block">
-            <label for="lastname">LastName</label>
-            <input type="text" name="lastname" id="lastname" minlength="3" maxlength="40" required>
-        </div>
-
-        <div class="block">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-
-        <div class="block">
-            <label for="number">Phone Number</label>
-            <input type="tel" pattern="[0-9]{8,}" required name="number" id="number">
-        </div>
-
-        <div class="block">
-            <label for="password">Password</label>
-            <div class="block">
-                <input type="password" name="password" id="password" required>
-                <p class="alert" hidden>Password does not match*</p>
-
             </div>
         </div>
 
-        <div class="block">
-            <label for="confirmpassword">Confirm Password</label>
-            <input type="password" title="Password does not match" name="confirmpassword" id="confirmpassword" required>
-            
-        </div>
 
-        <button type="submit">Submit</button>
-    </form>
+    </div>
+
+
 
     <script src="./script.js"></script>
 </body>
